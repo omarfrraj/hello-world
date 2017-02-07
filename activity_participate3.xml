@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_participate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.github.splendinator.treasurehuntapp.Participate"
+    android:background="@color/colorBlueLight">
+
+    <TextView
+        android:text="Treasure Hunt #1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:background="@color/colorWhite"
+        android:layout_centerInParent="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="Not quite there yet..."
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/position"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorGray"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:minHeight="75dp"
+            android:gravity="center"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:elevation="0dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="Step 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/banner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/veiw">
+
+        <Button
+            android:id="@+id/Hunt1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Veiw description" />
+
+        <Button
+            android:id="@+id/Hunt2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="View map" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Description will be here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/veiw"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:minHeight="250dp"
+        android:minWidth="375dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:elevation="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
