@@ -50,15 +50,4 @@ public class Participate2 extends AppCompatActivity {
         TextView x = (TextView) findViewById(R.id.input);
         return x.getText().toString();
     }
-
-    @Override
-    public void onBackPressed(){
-        Intent i = new Intent(this, Participate.class);
-
-        i.putExtras(getIntent());
-        i.putExtra(FIELD,getInput());
-        i.putExtra("swoosh","right");
-
-        swoosh(false,i);
-    }
 }
